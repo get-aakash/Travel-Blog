@@ -6,6 +6,9 @@ body {
   background: orangered;
   padding: 8px 0;
 }
+* {
+  box-sizing: border-box;
+}
 
 .container {
   width: 80%;
@@ -159,6 +162,7 @@ article.btn{
   padding-bottom: 1rem;
   border-radius: 5px;
   box-shadow: -5px 5px 10px 5px ;
+  margin-top: 2rem;
 }
 
 .card img{
@@ -177,3 +181,98 @@ article.btn{
   flex-direction: column;
   align-items: center;
 }
+
+
+/* media query*/
+/*desktop and larger 1200px */
+
+
+/* ipad between 768px to 1200px*/
+@media (max-width: 1100px){
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content{
+    width: 100%;
+  }
+  .side-links{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .read-by-country,
+  .read-by-date{
+    width: 45%;
+    text-align: center;
+  }
+  .side-links ul{
+    list-style: none;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+    line-height: 1.5rem;
+  }
+  .card{
+    width: 47%;
+    
+    
+  }
+}
+
+/* mobile less than 768px */
+@media (max-width: 768px){
+  .global-msg{
+    display: none;
+  }
+  main article{
+    
+    display: flex;
+    flex-direction: column;
+
+  }
+  .art-img{
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    
+  
+  }
+  .title{
+    margin-bottom: 1rem;
+
+  }
+  .btn{
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .side-links{
+  
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .read-by-country,
+  .read-by-date{
+    width: 100%;
+    text-align: center;
+  }
+  .card{
+    width: 100%;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  input{
+    line-height: 2rem;
+    border: 1px rgb(128, 128, 128,0.318);
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
