@@ -67,7 +67,7 @@ a {
 
 .hero{
   height: 80vh;
-  background: url(image/hero.jpg) no-repeat center center;
+  background: url(image/background_image.jpg) no-repeat center center;
   background-size:cover;
 
   display:flex;
@@ -79,7 +79,7 @@ a {
   background: rgba(0, 0, 0, 0.618);
   color:white;
   padding:16px 32px;
-  width:350px;
+  width:450px;
   text-align: center;
   border-radius:10px;
 }
@@ -112,7 +112,7 @@ article.btn{
 
 .art-img{
   max-width: 200px;
-  margin-right: 20px;
+  margin-right: 30px;
 
 }
 
